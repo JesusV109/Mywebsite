@@ -32,22 +32,21 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {/* Background applied globally */}
-        <MotionBackgroundElegant>
-          {/* Foreground content */}
-          <div className="relative z-10">
-            <Navbar />
-            {children}
-            <footer className="text-center py-6 text-sm text-gray-400">
-              © {new Date().getFullYear()} Jesus Vazquez · Built with Next.js &
-              Tailwind
-            </footer>
-          </div>
-        </MotionBackgroundElegant>
+        {/* Wrap everything in LazyMotion */}
+        <LazyMotion features={domAnimation}>
+          {/* Background applied globally */}
+          <MotionBackgroundElegant>
+            {/* Foreground content */}
+            <div className="relative z-10">
+              <Navbar />
+              {children}
+              <footer className="text-center py-6 text-sm text-gray-400">
+                © {new Date().getFullYear()} Jesus Vazquez · Built with Next.js & Tailwind
+              </footer>
+            </div>
+          </MotionBackgroundElegant>
+        </LazyMotion>
       </body>
-      <LazyMotion features={domAnimation}>
-       {children}
-     </LazyMotion>
     </html>
   );
 }
