@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link"; // ✅ Import Next.js Link
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -20,6 +20,7 @@ export default function Hero() {
             height={140}
             className="rounded-full border-4 border-gray-300 dark:border-gray-700 shadow-xl"
             priority
+            quality={70} // ✅ lighter image for mobile
           />
         </motion.div>
 
@@ -57,7 +58,7 @@ export default function Hero() {
             href="/resume.pdf"
             className="px-6 py-3 rounded-full border border-gray-300 dark:border-gray-700 bg-gray-100/10 backdrop-blur-sm hover:bg-gray-200/20 text-white text-sm sm:text-base shadow-lg transition"
           >
-            Download Resume
+            View Resume
           </Link>
         </motion.div>
       </div>

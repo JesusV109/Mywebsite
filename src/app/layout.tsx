@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import Navbar from "@/components/Navbar";
 import "./globals.css";
 import MotionBackgroundElegant from "@/components/MotionBackgroundElegant";
+import { LazyMotion, domAnimation } from "framer-motion";
 
 // Define custom fonts
 const geistSans = localFont({
@@ -44,6 +45,9 @@ export default function RootLayout({
           </div>
         </MotionBackgroundElegant>
       </body>
+      <LazyMotion features={domAnimation}>
+       {children}
+     </LazyMotion>
     </html>
   );
 }

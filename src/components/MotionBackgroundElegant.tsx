@@ -8,30 +8,28 @@ export default function MotionBackgroundElegant({
   children: React.ReactNode;
 }) {
   return (
-    <div className="relative min-h-screen bg-[#0a192f] text-white overflow-hidden">
-      {/* Animated Bubbles */}
+    <div className="relative min-h-screen w-full overflow-hidden bg-gradient-to-b from-gray-950 via-gray-900 to-black">
+      {/* Animated blobs */}
       <motion.div
-        className="absolute top-[-10%] left-[15%] w-[600px] h-[600px] rounded-full bg-[#1f3a60] opacity-30 blur-3xl"
-        animate={{ y: [0, 50, 0], x: [0, 30, 0] }}
-        transition={{ repeat: Infinity, duration: 20, ease: "easeInOut" }}
+        className="absolute w-[350px] h-[350px] bg-blue-500/20 rounded-full blur-2xl"
+        animate={{ x: [0, 60, -60, 0], y: [0, -40, 40, 0] }}
+        transition={{ duration: 25, repeat: Infinity, ease: "easeInOut" }}
+        style={{ top: "10%", left: "15%" }}
       />
       <motion.div
-        className="absolute bottom-[-10%] right-[10%] w-[700px] h-[700px] rounded-full bg-[#064e3b] opacity-30 blur-3xl"
-        animate={{ y: [0, -60, 0], x: [0, -40, 0] }}
-        transition={{ repeat: Infinity, duration: 25, ease: "easeInOut" }}
+        className="absolute w-[400px] h-[400px] bg-green-500/15 rounded-full blur-2xl"
+        animate={{ x: [0, -50, 50, 0], y: [0, 50, -50, 0] }}
+        transition={{ duration: 30, repeat: Infinity, ease: "easeInOut" }}
+        style={{ bottom: "15%", right: "20%" }}
       />
       <motion.div
-        className="absolute top-[40%] left-[50%] w-[500px] h-[500px] rounded-full bg-[#312e81] opacity-30 blur-3xl"
-        animate={{ y: [0, 40, 0], x: [0, -30, 0] }}
-        transition={{ repeat: Infinity, duration: 22, ease: "easeInOut" }}
-      />
-      <motion.div
-        className="absolute bottom-[20%] left-[20%] w-[400px] h-[400px] rounded-full bg-[#1c1c1c] opacity-40 blur-2xl"
-        animate={{ y: [0, -30, 0], x: [0, 20, 0] }}
-        transition={{ repeat: Infinity, duration: 18, ease: "easeInOut" }}
+        className="absolute w-[300px] h-[300px] bg-purple-500/15 rounded-full blur-2xl"
+        animate={{ x: [0, 40, -40, 0], y: [0, -30, 30, 0] }}
+        transition={{ duration: 22, repeat: Infinity, ease: "easeInOut" }}
+        style={{ bottom: "25%", left: "10%" }}
       />
 
-      {/* Foreground */}
+      {/* Foreground content */}
       <div className="relative z-10">{children}</div>
     </div>
   );
