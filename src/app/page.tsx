@@ -1,82 +1,89 @@
-import Image from "next/image";
+"use client";
 
+import Hero from "@/components/Hero";
+import Section from "@/components/Section";
+import { ProjectCard } from "@/components/ProjectCard";
+import { motion } from "framer-motion";
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 30 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+};
 
 export default function Home() {
   return (
+    <div className="min-h-screen">
+      {/* Hero */}
+      <Hero />
 
-    <div className="grid grid-rows-[auto_1fr_auto] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
-      {/* Header */}
-      <header className="row-start-1 text-center">
-        <Image
-          src="/me.jpg" // Replace with your profile picture
-          alt="Your Name"
-          width={120}
-          height={120}
-          className="rounded-full border-2 border-gray-300 dark:border-gray-700 shadow-lg"
-          priority
-        />
-        <h1 className="text-2xl sm:text-4xl font-bold mt-4">Jesus Vazquez</h1>
-        <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mt-2">
-          Software Engineer | Machine Learning Enthusiast | Creator
-        </p>
-      </header>
-
-      {/* Main Content */}
-      <main className="row-start-2 flex flex-col items-center gap-12">
-        {/* About Section */}
-        <section className="text-center max-w-2xl">
-          <h2 className="text-xl sm:text-2xl font-semibold mb-4">About Me</h2>
-          <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300">
-            I&#39;m a passionate software engineer with a focus on Machine Learning
-            and web development. I enjoy building intuitive, scalable
-            applications and exploring new technologies. When I&#39;m not coding,
-            you can find me exploring the outdoors or experimenting with AI
-            models.
-          </p>
-        </section>
-
-        {/* Links Section */}
-        <section className="flex flex-col sm:flex-row gap-4">
-          <a
-            href="/about"
-            className="rounded-full border border-gray-300 dark:border-gray-700 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors px-6 py-3 text-sm sm:text-base shadow-md"
-          >
-            About Me
-          </a>
-          <a
-            href="/projects"
-            className="rounded-full border border-gray-300 dark:border-gray-700 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors px-6 py-3 text-sm sm:text-base shadow-md"
+      {/* Projects Section - no solid bg to avoid the "cut" */}
+      <Section className="relative z-10 text-center">
+        <motion.div initial="hidden" whileInView="show" variants={fadeInUp}>
+          <h2
+            id="projects"
+            className="text-2xl sm:text-3xl font-bold text-center mb-10 text-white"
           >
             Projects
-          </a>
-          <a
-            href="/contact"
-            className="rounded-full border border-gray-300 dark:border-gray-700 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors px-6 py-3 text-sm sm:text-base shadow-md"
-          >
-            Contact Me
-          </a>
-        </section>
-      </main>
+          </h2>
+        </motion.div>
 
-      {/* Footer */}
-      <footer className="row-start-3 flex flex-wrap items-center justify-center gap-6 text-sm text-gray-600 dark:text-gray-400">
-        <a
-          href="https://github.com/JesusV109"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:underline hover:text-gray-800 dark:hover:text-gray-200"
-        >
-          GitHub
-        </a>
-        <a
-          href="https://www.linkedin.com/in/jesus-vazquez-02b450202/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:underline hover:text-gray-800 dark:hover:text-gray-200"
-        >
-          LinkedIn
-        </a>
-      </footer>
+        <div className="grid gap-8 sm:grid-cols-2 max-w-5xl mx-auto">
+          <motion.div variants={fadeInUp} initial="hidden" whileInView="show">
+            <ProjectCard
+              title="Ordex"
+              description="Fully deployed logistics app with Next.js + Firebase + Prisma. Tracks pallets, inventory, and streamlines warehouse ops.   Use jesus@gmail.com and password 1234567890 to log in"
+              link="https://github.com/JesusV109/Ordex"
+              demo="https://pdrapp.vercel.app"
+              tags={["Next.js", "TypeScript", "Firebase", "Prisma"]}
+            />
+          </motion.div>
+
+          <motion.div variants={fadeInUp} initial="hidden" whileInView="show">
+            <ProjectCard
+              title="safeCity"
+              description="Incident reporting platform with map visualization and admin dashboard."
+              link="https://github.com/JesusV109/safeCity"
+              tags={["Next.js", "Leaflet/Maps", "Full-stack"]}
+            />
+          </motion.div>
+
+          <motion.div variants={fadeInUp} initial="hidden" whileInView="show">
+            <ProjectCard
+              title="Custom Alarm Clock"
+              description="Arduino RTC + ultrasonic sensor + LED matrix & buzzer. Wave to silence."
+              link="https://github.com/JesusV109/alarmClock"
+              tags={["Arduino", "C/C++", "Hardware"]}
+            />
+          </motion.div>
+
+          <motion.div variants={fadeInUp} initial="hidden" whileInView="show">
+            <ProjectCard
+              title="Carbon Footprint (HackRU)"
+              description="Next.js + Prisma + Tailwind app that uses Google Maps transit data to calculate emissions and rank users."
+              link="https://github.com/JesusV109/hackru"
+              tags={["Next.js", "Prisma", "Tailwind", "Google Maps"]}
+            />
+          </motion.div>
+        </div>
+      </Section>
+
+      {/* Contact Section */}
+      <Section className="text-center relative z-10">
+        <motion.div initial="hidden" whileInView="show" variants={fadeInUp}>
+          <h2 id="contact" className="text-2xl sm:text-3xl font-bold mb-6 text-white">
+            Contact Me
+          </h2>
+          <p className="text-sm sm:text-base text-gray-200">
+            Reach me at{" "}
+            <a
+              href="mailto:albertovazquez86av@gmail.com"
+              className="underline text-blue-400 hover:text-blue-500"
+            >
+              albertovazquez86av@gmail.com
+            </a>
+          </p>
+        </motion.div>
+      </Section>
     </div>
   );
 }

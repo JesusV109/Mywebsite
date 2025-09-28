@@ -1,131 +1,238 @@
+"use client";
+
 import Image from "next/image";
+import Section from "@/components/Section";
+import { ProjectCard } from "@/components/ProjectCard";
+import { motion } from "framer-motion";
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 30 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+};
 
 export default function About() {
   return (
-    <div className="min-h-screen p-8 sm:p-20 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <div className="min-h-screen">
       {/* Header */}
-      <header className="text-center mb-12">
-        <h1 className="text-3xl sm:text-4xl font-bold">About Me</h1>
-        <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mt-2">
-          Learn more about my journey, skills, and experiences.
-        </p>
-      </header>
+      <Section className="text-center">
+        <motion.div initial="hidden" whileInView="show" variants={fadeInUp}>
+          <h1 className="text-3xl sm:text-4xl font-bold">About Me</h1>
+          <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mt-2">
+            Learn more about my journey, skills, and experiences.
+          </p>
+        </motion.div>
+      </Section>
 
-      {/* About Section */}
-      <section className="text-center mb-16">
-        <Image
-          src="/me.jpg" // Replace with your profile picture
-          alt="My Picture"
-          width={120}
-          height={120}
-          className="rounded-full border-2 border-gray-300 dark:border-gray-700 shadow-lg mb-6 mx-auto"
-        />
-        <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300">
-          Hi, I&#39;m Jesus Vazquez, a passionate software engineer specializing in web development and machine learning. I am currently pursuing a
-          Bachelor of Science in Computer Science at Kean University in Union, New Jersey.
-        </p>
-        <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300 mt-4">
-          Over the years, I&#39;ve gained experience building e-commerce platforms, intuitive applications, and innovative personal projects. I enjoy 
-          creating solutions that blend technical expertise with creativity, enhancing user experience and engagement.
-        </p>
-      </section>
+      {/* Intro */}
+      <Section className="text-center">
+        <motion.div
+          initial="hidden"
+          whileInView="show"
+          variants={fadeInUp}
+          viewport={{ once: true }}
+        >
+          <Image
+            src="/me.jpg"
+            alt="My Picture"
+            width={120}
+            height={120}
+            priority
+            className="rounded-full border-2 border-gray-300 dark:border-gray-700 shadow-lg mb-6 mx-auto"
+          />
+          <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300 max-w-3xl mx-auto">
+            Hi, I’m <strong>Jesus Vazquez</strong>, a software engineer focusing
+            on <strong>web development/mobile development</strong> and{" "}
+            <strong>machine learning</strong>, and a Computer Science student at
+            Kean University (Union, NJ).
+          </p>
+        </motion.div>
+      </Section>
 
       {/* Education */}
-      <section className="mb-16">
-        <h2 className="text-2xl font-semibold mb-6">Education</h2>
-        <p className="text-sm">
-          <strong>Bachelor of Science in Computer Science</strong>
-        </p>
-        <p className="text-sm text-gray-600 dark:text-gray-400">Kean University, Union, New Jersey</p>
-        <p className="text-sm text-gray-500 dark:text-gray-400">2021 - Present</p>
-      </section>
+      <Section>
+        <motion.div
+          initial="hidden"
+          whileInView="show"
+          variants={fadeInUp}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-2xl font-semibold mb-6">Education</h2>
+          <div className="rounded-xl border border-gray-200 dark:border-gray-800 p-6 bg-white dark:bg-gray-900">
+            <p className="text-sm font-bold">
+              Bachelor of Science in Computer Science
+            </p>
+            <p className="text-sm text-gray-600 dark:text-gray-400">
+              Kean University, Union, NJ
+            </p>
+            <p className="text-sm text-gray-500 dark:text-gray-400">
+              2022 – Present
+            </p>
+          </div>
+        </motion.div>
+      </Section>
 
       {/* Experience */}
-      <section className="mb-16">
-        <h2 className="text-2xl font-semibold mb-6">Experience</h2>
-        <div className="mb-6">
-          <h3 className="font-bold">Web Developer</h3>
-          <p className="text-sm text-gray-600 dark:text-gray-400">Social-Paths</p>
-          <p className="text-sm text-gray-500 dark:text-gray-400">September 2023 - January 2024</p>
-          <ul className="list-disc list-inside text-sm space-y-2">
-            <li>Developed and launched an e-commerce site for YBF brand using Shopify, featuring 100+ products.</li>
-            <li>Designed layout and UI, optimizing for user experience and brand consistency.</li>
-            <li>Managed pricing, product listings, and integrated payment gateways.</li>
-            <li>Led the launch, boosting initial sales and brand visibility.</li>
-          </ul>
-        </div>
-      </section>
+      <Section>
+        <motion.div
+          initial="hidden"
+          whileInView="show"
+          variants={fadeInUp}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-2xl font-semibold mb-6">Experience</h2>
+          <div className="grid gap-6 md:grid-cols-2">
+            {/* IT Assistant */}
+            <motion.div variants={fadeInUp}>
+              <div className="rounded-xl border border-gray-200 dark:border-gray-800 p-6 bg-white dark:bg-gray-900">
+                <h3 className="font-bold">IT Assistant / Systems Support</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  Packaging & Distribution Resources (Internship)
+                </p>
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                  Jun 2025 – Present
+                </p>
+                <ul className="list-disc list-inside text-sm space-y-2 mt-2">
+                  <li>Automated cleanup scripts improving storage & performance.</li>
+                  <li>Built Android app for Google Photos cleanup & sync.</li>
+                  <li>Configured SFTP connection & collaborated with the EDI team.</li>
+                  <li>Maintained Zebra printers, HP LaserJets, and networking.</li>
+                  <li>Supported Windows Server shares, VPNs, VLANs.</li>
+                  <li>
+                    Assisted ERP deployment (Dynamics 365 Business Central CU52).
+                  </li>
+                </ul>
+              </div>
+            </motion.div>
+
+            {/* Web Developer */}
+            <motion.div variants={fadeInUp}>
+              <div className="rounded-xl border border-gray-200 dark:border-gray-800 p-6 bg-white dark:bg-gray-900">
+                <h3 className="font-bold">Web Developer</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  YBF Beauty
+                </p>
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                  Sep 2023 – Jan 2024
+                </p>
+                <ul className="list-disc list-inside text-sm space-y-2 mt-2">
+                  <li>Launched Shopify store with 100+ SKUs.</li>
+                  <li>Designed responsive UI/UX, managed listings & payments.</li>
+                  <li>Improved brand consistency and early sales growth.</li>
+                </ul>
+              </div>
+            </motion.div>
+          </div>
+        </motion.div>
+      </Section>
 
       {/* Projects */}
-      <section className="mb-16">
-        <h2 className="text-2xl font-semibold mb-6">Projects</h2>
-        <div className="mb-6">
-          <h3 className="font-bold">Custom Alarm Clock with Ultrasonic Sensor</h3>
-          <p className="text-sm text-gray-600 dark:text-gray-400">
-            Personal Project • <a href="https://github.com/JesusV109/alarmClock" className="text-blue-500 hover:underline">GitHub</a>
-          </p>
-          <p className="text-sm text-gray-500 dark:text-gray-400">September 2024 - October 2024</p>
-          <ul className="list-disc list-inside text-sm space-y-2">
-            <li>Built an alarm clock using an RTC module and ultrasonic sensor to deactivate the alarm within 4 cm.</li>
-            <li>Integrated an active buzzer and LED matrix for clear time display and notifications.</li>
-            <li>Achieved over 95% accuracy in timekeeping and reliable alarm deactivation.</li>
-          </ul>
-        </div>
-        <div>
-          <h3 className="font-bold">Pizza Store Management System</h3>
-          <p className="text-sm text-gray-600 dark:text-gray-400">
-            Personal Project • <a href="https://github.com/JesusV109/pizza" className="text-blue-500 hover:underline">GitHub</a>
-          </p>
-          <p className="text-sm text-gray-500 dark:text-gray-400">September 2024 - October 2024</p>
-          <ul className="list-disc list-inside text-sm space-y-2">
-            <li>Created a database schema for pizza store operations covering orders, inventory, and employee scheduling.</li>
-            <li>Developed in MySQL, leveraging SQL for data integrity and relational management.</li>
-            <li>Used Navicat for query optimization, improving data accessibility and efficiency.</li>
-          </ul>
-        </div>
-      </section>
+      <Section>
+        <motion.div
+          initial="hidden"
+          whileInView="show"
+          variants={fadeInUp}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-2xl font-semibold mb-6">Projects</h2>
+          <div className="grid gap-8 sm:grid-cols-2">
+            <ProjectCard
+              title="Ordex"
+              description="Next.js + Firebase + Prisma logistics app for pallet tracking & inventory. Fully functional and deployed."
+              link="https://github.com/JesusV109/Ordex"
+              demo="https://pdrapp.vercel.app"
+              tags={["Next.js", "TypeScript", "Firebase", "Prisma"]}
+            />
+            <ProjectCard
+              title="safeCity"
+              description="Full-stack app for incident reporting with maps and admin dashboard."
+              link="https://github.com/JesusV109/safeCity"
+              tags={["Next.js", "Maps", "Full-stack"]}
+            />
+            <ProjectCard
+              title="Carbon Footprint Calculator (HackRU)"
+              description="Next.js + Prisma + Tailwind app using Google Maps transit data to estimate emissions and leaderboard ranking."
+              link="https://github.com/JesusV109/hackru"
+              tags={["Next.js", "Prisma", "Tailwind"]}
+            />
+            <ProjectCard
+              title="Custom Alarm Clock"
+              description="Arduino + RTC + ultrasonic sensor + LED matrix. Wave within 4cm to silence the alarm."
+              link="https://github.com/JesusV109/alarmClock"
+              tags={["Arduino", "C++", "Electronics"]}
+            />
+          </div>
+        </motion.div>
+      </Section>
 
       {/* Certifications */}
-      <section className="mb-16">
-        <h2 className="text-2xl font-semibold mb-6">Certifications</h2>
-        <p className="text-sm">
-          <strong>SQL for Data Science</strong> - EDX Verified Certificate (2024)
-        </p>
-      </section>
+      <Section>
+        <motion.div
+          initial="hidden"
+          whileInView="show"
+          variants={fadeInUp}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-2xl font-semibold mb-6">Certifications</h2>
+          <p className="text-sm">
+            <strong>SQL for Data Science</strong> — edX (2024)
+          </p>
+        </motion.div>
+      </Section>
 
-      {/* Hackathon Experience */}
-      <section className="mb-16">
-        <h2 className="text-2xl font-semibold mb-6">Hackathon Experience</h2>
-        <div>
-          <h3 className="font-bold">Programmer</h3>
-          <p className="text-sm text-gray-600 dark:text-gray-400">Rutgers University • HackRU</p>
-          <p className="text-sm text-gray-500 dark:text-gray-400">October 2024</p>
+      {/* Hackathons */}
+      <Section>
+        <motion.div
+          initial="hidden"
+          whileInView="show"
+          variants={fadeInUp}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-2xl font-semibold mb-6">Hackathons</h2>
           <ul className="list-disc list-inside text-sm space-y-2">
-            <li>Developed a Next.js web app for leaderboard tracking using Prisma ORM and Tailwind CSS.</li>
-            <li>Optimized for deployment on platforms like Vercel, focusing on API handling and database creation.</li>
+            <li>
+              <strong>HackRU (2024)</strong> — Built a Next.js leaderboard app
+              with Prisma ORM and Tailwind CSS.
+            </li>
+            <li>
+              <strong>KeanUHacks (2025)</strong> — Developed AI-driven project with
+              Next.js and Firebase in a team collaboration.
+            </li>
           </ul>
-        </div>
-      </section>
+        </motion.div>
+      </Section>
 
       {/* Skills */}
-      <section className="mb-16">
-        <h2 className="text-2xl font-semibold mb-6">Skills</h2>
-        <ul className="list-disc list-inside text-left space-y-2">
-          <li>Frameworks and Libraries: Node.js, Next.js</li>
-          <li>Tools: Git, Navicat, GitHub, MySQL Workbench</li>
-          <li>Languages: Java, Python, SQL, JavaScript/HTML/CSS, TypeScript</li>
-        </ul>
-      </section>
-
-      {/* Contact */}
-      <section className="mb-16">
-        <h2 className="text-2xl font-semibold mb-6">Contact</h2>
-        <ul className="list-none space-y-2">
-          <li>Email: <a href="mailto:albertovazquez86av@gmail.com" className="text-blue-500 hover:underline">albertovazquez86av@gmail.com</a></li>
-          <li>LinkedIn: <a href="https://www.linkedin.com/in/jesus-vazquez-02b450202" className="text-blue-500 hover:underline">linkedin.com/in/jesus-vazquez-02b450202</a></li>
-          <li>GitHub: <a href="https://github.com/JesusV109" className="text-blue-500 hover:underline">github.com/JesusV109</a></li>
-        </ul>
-      </section>
+      <Section>
+        <motion.div
+          initial="hidden"
+          whileInView="show"
+          variants={fadeInUp}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-2xl font-semibold mb-6">Skills</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="rounded-xl border border-gray-200 dark:border-gray-800 p-6 bg-white dark:bg-gray-900">
+              <h3 className="font-semibold mb-2">Languages</h3>
+              <p className="text-sm">
+                Java, Python, SQL, TypeScript, JavaScript, HTML/CSS
+              </p>
+            </div>
+            <div className="rounded-xl border border-gray-200 dark:border-gray-800 p-6 bg-white dark:bg-gray-900">
+              <h3 className="font-semibold mb-2">Frameworks</h3>
+              <p className="text-sm">
+                Next.js, Node.js, React, Prisma, Tailwind CSS
+              </p>
+            </div>
+            <div className="rounded-xl border border-gray-200 dark:border-gray-800 p-6 bg-white dark:bg-gray-900">
+              <h3 className="font-semibold mb-2">Tools & Systems</h3>
+              <p className="text-sm">
+                Git, GitHub, Navicat, MySQL Workbench, Dynamics 365, SFTP, Windows
+                Server
+              </p>
+            </div>
+          </div>
+        </motion.div>
+      </Section>
     </div>
   );
 }
