@@ -1,144 +1,88 @@
 %PDF-1.4
-%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
 1 0 obj
-<<
-/F1 2 0 R /F2 3 0 R /F3 7 0 R
->>
+<< /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<<
-/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
->>
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
 endobj
 3 0 obj
-<<
-/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
->>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> /Contents 4 0 R >>
 endobj
 4 0 obj
-<<
-/A <<
-/S /URI /Type /Action /URI (mailto:albertovazquez86av@gmail.com)
->> /Border [ 0 0 0 ] /Rect [ 98.06 716 243.26 728 ] /Subtype /Link /Type /Annot
->>
+<< /Length 5264 >>
+stream
+BT /F2 18 Tf 42 756 Td (Jesus Vazquez) Tj ET
+BT /F2 9.5 Tf 42 735 Td (Software Engineer / IT Assistant \227 PDR) Tj ET
+BT /F1 7.7 Tf 42 723 Td (albertovazquez86av@gmail.com | linkedin.com/in/jesus-vazquez-02b450202 | github.com/JesusV109 | Portfolio) Tj ET
+BT /F2 9 Tf 42 708.5 Td (EDUCATION) Tj ET
+0.35 w 42 700.5 m 570 700.5 l S
+BT /F2 8.5 Tf 42 696.5 Td (Kean University | Union, NJ) Tj ET
+BT /F1 8.5 Tf 42 687.7 Td (B.S. in Computer Science) Tj ET
+BT /F2 9 Tf 42 675.4000000000001 Td (TECHNICAL SKILLS) Tj ET
+0.35 w 42 667.4000000000001 m 570 667.4000000000001 l S
+BT /F1 8.5 Tf 42 663.4000000000001 Td (Languages: C#, SQL, TypeScript, JavaScript, Python, Java, HTML/CSS) Tj ET
+BT /F1 8.5 Tf 42 654.1500000000001 Td (Frameworks / Tools: .NET, WPF, Next.js, React, Node.js, Tailwind CSS, Prisma, Git, GitHub, VS Code) Tj ET
+BT /F1 8.5 Tf 42 644.9000000000001 Td (Business Systems: Microsoft Dynamics 365 Business Central, SQL Server, SSRS, SQL Agent, EDI, SFTP, BarTender,) Tj ET
+BT /F1 8.5 Tf 42 635.6500000000001 Td (Zebra Printers) Tj ET
+BT /F1 8.5 Tf 42 626.4000000000001 Td (Infrastructure: Linux, Ubuntu, Proxmox, Docker, SSH, Apache, Reverse Proxy, SSL, Windows Server) Tj ET
+BT /F1 8.5 Tf 42 617.1500000000001 Td (AI / Data: AI Agents, Automation Pipelines, Pandas, DuckDB, Research Logging) Tj ET
+BT /F2 9 Tf 42 604.4000000000001 Td (RELEVANT EXPERIENCE) Tj ET
+0.35 w 42 596.4000000000001 m 570 596.4000000000001 l S
+BT /F2 8 Tf 42 592.4000000000001 Td (Software Engineer / IT Assistant \227 PDR) Tj ET
+BT /F1 8.5 Tf 42 582.8000000000001 Td (- Build and maintain internal applications using C#, .NET, APIs, SQL Server, and warehouse and business workflow) Tj ET
+BT /F1 8.5 Tf 42 573.3000000000001 Td (  logic.) Tj ET
+BT /F1 8.5 Tf 42 563.8000000000001 Td (- Create API endpoints and backend workflows for internal tools used in logistics, reporting, label printing, and) Tj ET
+BT /F1 8.5 Tf 42 554.3000000000001 Td (  operations.) Tj ET
+BT /F1 8.5 Tf 42 544.8000000000001 Td (- Code and support Microsoft Dynamics 365 Business Central customizations, workflows, permissions, reports, data) Tj ET
+BT /F1 8.5 Tf 42 535.3000000000001 Td (  issues, and warehouse processes.) Tj ET
+BT /F1 8.5 Tf 42 525.8000000000001 Td (- Develop and troubleshoot SQL Server queries, stored procedures, SSRS reports, SQL Agent jobs, and operational) Tj ET
+BT /F1 8.5 Tf 42 516.3000000000001 Td (  data flows.) Tj ET
+BT /F1 8.5 Tf 42 506.80000000000007 Td (- Support EDI/SFTP workflows, file movement jobs, imports/exports, BarTender and Zebra printing, reprints, and) Tj ET
+BT /F1 8.5 Tf 42 497.30000000000007 Td (  print-job troubleshooting.) Tj ET
+BT /F1 8.5 Tf 42 487.80000000000007 Td (- Troubleshoot Windows/Linux servers, Apache, reverse proxies, SSL, hosted reporting pages, and remote) Tj ET
+BT /F1 8.5 Tf 42 478.30000000000007 Td (  connectivity.) Tj ET
+BT /F2 8 Tf 42 467.30000000000007 Td (YBF Beauty | Web Developer) Tj ET
+BT /F1 8.5 Tf 42 457.70000000000005 Td (- Built and maintained Shopify storefront pages, product listings, responsive UI/UX, ecommerce content, and media) Tj ET
+BT /F1 8.5 Tf 42 448.20000000000005 Td (  assets.) Tj ET
+BT /F2 9 Tf 42 435.20000000000005 Td (PROJECTS) Tj ET
+0.35 w 42 427.20000000000005 m 570 427.20000000000005 l S
+BT /F2 8 Tf 42 423.20000000000005 Td (PDR Labeling System) Tj ET
+BT /F1 8.5 Tf 42 414.00000000000006 Td (- Built and supported internal label-printing architecture using C#, .NET, WPF, REST APIs, SQL Server, worker) Tj ET
+BT /F1 8.5 Tf 42 404.50000000000006 Td (  services, BarTender, and Zebra printers.) Tj ET
+BT /F1 8.5 Tf 42 395.00000000000006 Td (- Worked on print workflows, previews, printer configuration, reprints, SSCC/carton/pallet/item label logic, and) Tj ET
+BT /F1 8.5 Tf 42 385.50000000000006 Td (  SQL stored procedures.) Tj ET
+BT /F2 8 Tf 42 376.00000000000006 Td (Ordex) Tj ET
+BT /F1 8.5 Tf 42 366.80000000000007 Td (- Built a Next.js, TypeScript, Firebase, Prisma, and Tailwind CSS logistics app for orders, pallets, inventory,) Tj ET
+BT /F1 8.5 Tf 42 357.30000000000007 Td (  locations, and warehouse workflows.) Tj ET
+BT /F2 8 Tf 42 347.80000000000007 Td (AI Ad Factory) Tj ET
+BT /F1 8.5 Tf 42 338.6000000000001 Td (- Built a self-hosted n8n, PostgreSQL, Docker, Telegram, and AI-agent pipeline for generation, scoring, revision) Tj ET
+BT /F1 8.5 Tf 42 329.1000000000001 Td (  memory, and human review.) Tj ET
+BT /F2 9 Tf 42 316.1000000000001 Td (HACKATHON EXPERIENCE) Tj ET
+0.35 w 42 308.1000000000001 m 570 308.1000000000001 l S
+BT /F2 8 Tf 42 304.1000000000001 Td (Hole in the Wall | HackPrinceton) Tj ET
+BT /F1 8.5 Tf 42 294.9000000000001 Td (- Built a rapid Next.js/React hackathon prototype using Firebase, TypeScript, and Tailwind CSS.) Tj ET
+BT /F1 8.5 Tf 42 285.4000000000001 Td (- Collaborated under a short deadline on product direction, frontend flow, debugging, and demo preparation.) Tj ET
+BT /F2 8 Tf 42 275.9000000000001 Td (OptiBuy | Columbia Hackathon) Tj ET
+BT /F1 8.5 Tf 42 266.7000000000001 Td (- Built a price-comparison hackathon web app with AI shopping assistance, price history, and smart-alert concepts.) Tj ET
+BT /F1 8.5 Tf 42 257.2000000000001 Td (- Used Next.js, TypeScript, Tailwind CSS, Prisma, Recharts, and authentication/data validation tooling.) Tj ET
+endstream
 endobj
 5 0 obj
-<<
-/A <<
-/S /URI /Type /Action /URI (https://github.com/JesusV109)
->> /Border [ 0 0 0 ] /Rect [ 251.42 716 352.58 728 ] /Subtype /Link /Type /Annot
->>
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
 endobj
 6 0 obj
-<<
-/A <<
-/S /URI /Type /Action /URI (https://www.linkedin.com/in/jesus-vazquez-02b450202/)
->> /Border [ 0 0 0 ] /Rect [ 360.74 716 546.93 728 ] /Subtype /Link /Type /Annot
->>
-endobj
-7 0 obj
-<<
-/BaseFont /ZapfDingbats /Name /F3 /Subtype /Type1 /Type /Font
->>
-endobj
-8 0 obj
-<<
-/A <<
-/S /URI /Type /Action /URI (https://github.com/JesusV109/Ordex)
->> /Border [ 0 0 0 ] /Rect [ 364.45 320 395.57 332 ] /Subtype /Link /Type /Annot
->>
-endobj
-9 0 obj
-<<
-/A <<
-/S /URI /Type /Action /URI (https://pdrapp.vercel.app)
->> /Border [ 0 0 0 ] /Rect [ 403.73 320 430.4 332 ] /Subtype /Link /Type /Annot
->>
-endobj
-10 0 obj
-<<
-/A <<
-/S /URI /Type /Action /URI (https://github.com/JesusV109/safeCity)
->> /Border [ 0 0 0 ] /Rect [ 398.38 284 429.5 296 ] /Subtype /Link /Type /Annot
->>
-endobj
-11 0 obj
-<<
-/A <<
-/S /URI /Type /Action /URI (https://github.com/JesusV109/hackru)
->> /Border [ 0 0 0 ] /Rect [ 522.3 248 553.42 260 ] /Subtype /Link /Type /Annot
->>
-endobj
-12 0 obj
-<<
-/A <<
-/S /URI /Type /Action /URI (https://github.com/JesusV109/alarmClock)
->> /Border [ 0 0 0 ] /Rect [ 369.72 212 400.84 224 ] /Subtype /Link /Type /Annot
->>
-endobj
-13 0 obj
-<<
-/Annots [ 4 0 R 5 0 R 6 0 R 8 0 R 9 0 R 10 0 R 11 0 R 12 0 R ] /Contents 17 0 R /MediaBox [ 0 0 612 792 ] /Parent 16 0 R /Resources <<
-/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
->> /Rotate 0 
-  /Trans <<
-
->> /Type /Page
->>
-endobj
-14 0 obj
-<<
-/PageMode /UseNone /Pages 16 0 R /Type /Catalog
->>
-endobj
-15 0 obj
-<<
-/Author (\(anonymous\)) /CreationDate (D:20250928202107+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20250928202107+00'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
-  /Subject (\(unspecified\)) /Title (\(anonymous\)) /Trapped /False
->>
-endobj
-16 0 obj
-<<
-/Count 1 /Kids [ 13 0 R ] /Type /Pages
->>
-endobj
-17 0 obj
-<<
-/Filter [ /ASCII85Decode /FlateDecode ] /Length 1920
->>
-stream
-GauHKD,]1K&H9tYfM>1eKO?m%$2nrhJH?9c8j_dun3sUI6m,.*,R;c.++Ge$:7E5jQZbEXanS<]IC/l6].4scr;#bF:&thpY]oGd+2DOkIb4p7e;'gHf%2L'\MB+O^DZ$?I-.tPC:]+kq(#,59o;sQnCuMd&6KnN6*#"0+6)T`!jshaEt+b`\$%gjp'sR$0_tlpf@HVD:\\.<lplci21L2Mk;t=,]4\gCd%GP.QkX\Q3.l^s\Z-6*VTQu*iP$=pq4H-#0]%Us>-(gXSME"Ea7dKD_u/3^%Q9Vl-LPQaKNlC5hQ:(m]/77f"lliK"^Y$no$Ml22Yrn=U]$k<D8Qn^<ce<N5P"O&+Z/P&48N=BK-Ke%K$^>I.RMQg]<;NrA91l_NflLO#%LYe1hq;9W=N%/G=a3G;Ys"A!)1;#.a?0=DLs!_<E^m.<AX%>L4=;h8E(NK;Lt@R0P4;&'UXER9XEMN<BdJUMq!0_?VGK:ltrDoVSZ;XBH;?427X58<R5Qp'g8\&Yj`G[CI?!0=s(,Fd;6:EAd]L^`AXgW:.N[YRV>-BJNXi&[%XIR@@h%.RI:EPTpcGD4q'u08#AsR@2jOfWFFoCOqB=GQFVmPL7?nr_#+L%A(f,=b'eq]8DdQ&!)qNrE=0T]T52HAB?JUSFE/U)@V>ft7qLa!kZG+6BOGPOjP0r*)l^oC@PG0I*angk;PaLPfPmK7.Pu=91N!3ceIdY$/-1oFJ1KT2PZ(=c0U"ukQ)AIiYg=uKWef9nFJYA/Bs&#tn9?d?=:.?(Q[s"diLGi=OTg/o,n\@[_GTb9$mhloVc,&7Tn7WjmNu2qlS\:s7,W5$pkOkEJP7ef8R7+8!VD5GlAQXo,9d.SNAU_mU69ktep"a%&/r,l,!dS1U^G9PBO"<[_WS`=QlMf@HdhFgXMZH"M4Ykq%NqG_Q\uQaN7@,E"A)atTc(6lW1"$m20AAb+rn0qXl/>IUQQ'`n44!!9.'Y.U9<_tH?>0I%=.HQJGq_pL-nRRZ`$:FHqF:n:r\T/<Z0.K)/$nP,cl%8/?@O:p#nDMP^?(D'fa;=Q?$Ns9P/+HE2oQ7!I`;K5orU6>%Tq<4f[17i)`I*9F?br#HghrY.clbl&piBH%861aR5!H'!,:tF]-/3aB/9j[YBl(,$m5b@jrFZ-rF#>KMu0uNb7ofHhfqK>?%f/K[ah)OIdZQ;pB_N*BIPWWJ!H7q?\5)68]K1k_!U)C=n)IVW\ji"C;QPdjY;MV`&h!e[!b;KQCl^Pt]CVP>Wt4AK0N8JfDl^m/o-lq06Ckld8[46MH(=&L'pr[*,J')77<58*N"rHl(ORI('Fd'/<-r8Q4,>9%uui?S)DN]M`!H+#sXi,fR#:+aQ&4=DT(9e5KJm1#_<4dNrXemH#0(LMI1B,s9I5_>I_-5/CN1?<-aqTVB$3J6GT0mD'!Si]T16(I_R*Ve,`f-^hDJ6M29+Pp'N\:h628i':4q%0]B,;U5pbYg"Lo]f)HVn!CsKa82/iLD,q>Qco0,d]*9!o^Y]B3\&7>O;P:H;&B7RNn`,_YS_=_d[7NbkTBJZB/m[i1uOg1n\p;u`n_J,/@LlM`ifqB[)*Xqh=IVWqXUZ>`D[qLYi6@-F)!^+bRAD>;3nWg<B^"Rhs%O]3E;YK>U-/g(Snh5Ygqh/_`&Qi$WX=q(ESJPZIHi('R"eA[:1SMm?LX#]:Ii,6clg8`%-aA([tVon2dJZM8EROCtH/@XT2CrhHi'sC1Q1>mDHh'`d&kUg2EA!qF""uS7;,;*6.-:%YKH]BcW:7FVl\c3ckUa\pI^hT8_(mHemYbo%a+sj7]`%.CCB^_HCIQO7b9%mc'Cm(nDK@WIM+YcN&5`@38(_/J4<3c1c_lV@H%[5t#7$Q!K1:L"5$;!Zn-#Ap*lgoWN0Q/2f3!eplu2m#h~>endstream
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
 endobj
 xref
-0 18
+0 7
 0000000000 65535 f 
-0000000073 00000 n 
-0000000124 00000 n 
-0000000231 00000 n 
-0000000343 00000 n 
-0000000515 00000 n 
-0000000681 00000 n 
-0000000871 00000 n 
-0000000954 00000 n 
-0000001126 00000 n 
-0000001288 00000 n 
-0000001463 00000 n 
-0000001636 00000 n 
-0000001814 00000 n 
-0000002073 00000 n 
-0000002143 00000 n 
-0000002427 00000 n 
-0000002488 00000 n 
-trailer
-<<
-/ID 
-[<425aa76352fb59aa976072c5f389e6b1><425aa76352fb59aa976072c5f389e6b1>]
-% ReportLab generated PDF document -- digest (http://www.reportlab.com)
-
-/Info 15 0 R
-/Root 14 0 R
-/Size 18
->>
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000005567 00000 n 
+0000005664 00000 n 
+trailer << /Size 7 /Root 1 0 R >>
 startxref
-4500
+5766
 %%EOF
