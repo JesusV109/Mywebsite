@@ -1,16 +1,16 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { contact } from "@/data/portfolio";
+
+const COPYRIGHT_YEAR = 2026;
 
 export default function Footer() {
   return (
-    <footer className="mt-20 border-t border-gray-200 dark:border-gray-800">
-      <div className="max-w-6xl mx-auto px-6 py-8 text-sm flex flex-col sm:flex-row items-center justify-between gap-4">
-        <p className="text-gray-600 dark:text-gray-400">
-          © {new Date().getFullYear()} Jesus Vazquez · Built with Next.js & Tailwind
-        </p>
+    <footer className="border-t border-white/[0.06]">
+      <div className="section-shell flex flex-col gap-4 py-8 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between">
+        <p>© {COPYRIGHT_YEAR} Jesus Vazquez</p>
         <div className="flex gap-5">
-          <a href="https://github.com/JesusV109" target="_blank" className="hover:text-blue-600"> <Github size={18} /> </a>
-          <a href="https://www.linkedin.com/in/jesus-vazquez-02b450202/" target="_blank" className="hover:text-blue-600"> <Linkedin size={18} /> </a>
-          <a href="mailto:albertovazquez86av@gmail.com" className="hover:text-blue-600"> <Mail size={18} /> </a>
+          <a className="hover:text-white" href={contact.github} target="_blank" rel="noreferrer">GitHub</a>
+          <a className="hover:text-white" href={contact.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
+          <a className="hover:text-white" href={`mailto:${contact.email}`}>Email</a>
         </div>
       </div>
     </footer>

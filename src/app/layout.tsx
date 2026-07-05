@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import Navbar from "@/components/Navbar";
 import "./globals.css";
 import MotionBackgroundElegant from "@/components/MotionBackgroundElegant";
-import { LazyMotion, domAnimation } from "framer-motion";
+import Footer from "@/components/Footer";
 
 // Define custom fonts
 const geistSans = localFont({
@@ -18,8 +18,17 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Jesus Vazquez Portfolio",
-  description: "Portfolio website of Jesus Vazquez",
+  title: { default: "Jesus Vazquez | Software Engineer", template: "%s | Jesus Vazquez" },
+  description: "Software Engineer / IT Assistant at PDR building C#/.NET internal applications, APIs, and Dynamics 365 Business Central workflows.",
+  keywords: ["Jesus Vazquez", "Software Engineer", "C#", ".NET", "Linux", "Dynamics 365 Business Central", "Full-Stack Developer"],
+  applicationName: "Jesus Vazquez Portfolio",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+  },
 };
 
 export default function RootLayout({
@@ -28,24 +37,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    // Grammarly and similar extensions inject attributes before React hydrates.
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {/* Wrap everything in LazyMotion */}
-        <LazyMotion features={domAnimation}>
-          {/* Background applied globally */}
-          <MotionBackgroundElegant>
-            {/* Foreground content */}
-            <div className="relative z-10">
-              <Navbar />
-              {children}
-              <footer className="text-center py-6 text-sm text-gray-400">
-                © {new Date().getFullYear()} Jesus Vazquez · Built with Next.js & Tailwind
-              </footer>
-            </div>
-          </MotionBackgroundElegant>
-        </LazyMotion>
+        <MotionBackgroundElegant>
+          <div className="relative z-10">
+            <Navbar />
+            {children}
+            <Footer />
+          </div>
+        </MotionBackgroundElegant>
       </body>
     </html>
   );
